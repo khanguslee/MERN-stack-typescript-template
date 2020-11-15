@@ -1,7 +1,7 @@
-const express = require('express');
-const { connectDb } = require('./models');
+import express from 'express';
+import { connectDb} from './models'
 
-const logger = require('./logger');
+import logger from './logger';
 
 const app = express();
 

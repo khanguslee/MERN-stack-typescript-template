@@ -1,10 +1,11 @@
-const mongoose = require('mongoose');
+import  mongoose  from 'mongoose';
 
-const config = require('../config');
+import config from '../config';
 
 const mongooseOptions = { useNewUrlParser: true };
 const connectDb = () => mongoose.connect(config.MONGODB_URI, mongooseOptions);
 
 // TODO: Add mongoose models here
 const models = {};
-module.exports = { models, connectDb };
+
+export { models, connectDb };
