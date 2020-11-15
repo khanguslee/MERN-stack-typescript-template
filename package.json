@@ -1,0 +1,22 @@
+{
+  "name": "MERN-stack-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:khanguslee/MERN-stack-template.git",
+  "author": "khanguslee <khanguslee@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "app:install": "yarn run server:install && yarn run client:install",
+    "client": "cd client && yarn start",
+    "client:install": "cd client && yarn",
+    "client:build": "cd client && yarn run build",
+    "client:test": "cd client && yarn test",
+    "server": "cd server && yarn start",
+    "server:install": "cd server && yarn",
+    "server:watch": "cd server && yarn start:watch",
+    "dev": "concurrently --names \"SERVER,CLIENT\" -c \"bgBlue.bold,bgCyan.bold\" --kill-others-on-fail \"yarn server:watch\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
