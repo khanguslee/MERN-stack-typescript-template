@@ -1,6 +1,6 @@
 # MERN Stack Template
 
-Quick template repo that sets up a full MERN stack.
+Quick template repo that sets up a full MERN stack with typescript enabled.
 
 This repo features the following:
 
