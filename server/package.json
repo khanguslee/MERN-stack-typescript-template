@@ -10,7 +10,7 @@
     "build": "tsc -p ."
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.10.14",
     "winston": "^3.3.3"
   },
